@@ -42,34 +42,25 @@ pytest tests/
 
 ## 📁 Estrutura do Projeto
 ```
-chatbot/
-├── app/
-│   ├── __init__.py
-│   ├── main.py              # Inicialização da API Flask
-│   └── routes.py            # Endpoints da API
-├── bots/
-│   ├── telegram_bot.py
-│   ├── whatsapp_bot.py
-│   └── chatbot_interface.py # Interface de terminal
-├── core/
-│   ├── __init__.py
-│   ├── chat.py              # Processamento de mensagem
-│   ├── model.py             # Carregamento do modelo
-│   ├── trainer.py           # Treinamento com sklearn
-│   └── utils.py             # Utilitários (limpeza de texto etc.)
-├── data/
-│   └── intents.json         # Dados de treino
-├── model/
-│   └── classifier.pkl       # Modelo treinado
-├── tests/
-│   ├── test_chat.py
-│   └── test_model.py
-├── run_all.py               # Script único de inicialização
-├── requirements.txt
-├── Instrucoes.txt
-├── Projeto.txt
+Chatbot0.2/
 ├── .env
-└── README.md
+├── Instrucoes.txt
+├── Modificacoes-futuras.txt
+├── README.md
+├── requirements.txt
+├── run_all.py
+├── app/
+│   ├── main.py
+│   ├── routes.py
+│   └── __init__.py
+├── bots/
+│   ├── chatbot_interface.py
+│   ├── telegram_bot.py
+│   └── whatsapp_bot.py
+├── core/
+│   ├── chat.py
+│   ├── model.py
+│   └── trainer.py
 ```
 
 ## 📌 Requisitos
@@ -77,4 +68,21 @@ chatbot/
 - Conta no [Telegram BotFather](https://t.me/BotFather)
 - Conta Twilio (opcional para WhatsApp)
 
+📦 Bibliotecas externas:
+
+    flask – framework web
+
+    waitress – servidor WSGI para produção
+
+    python-dotenv (dotenv) – para carregar variáveis do arquivo .env
+
+    python-telegram-bot (telegram, telegram.ext) – integração com o Telegram
+
+    twilio – integração com WhatsApp via Twilio
+
+    scikit-learn – para o modelo de NLP (ex: Naive Bayes, vetorização de texto)
+
+📦 Bibliotecas padrão do Python:
+
+    os, threading, multiprocessing, random, json, re, pickle
 ---

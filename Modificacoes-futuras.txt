@@ -1,12 +1,68 @@
-Modificacoes futuras!
+🛣️ Roadmap Técnico – Evolução do Chatbot
 
-1 - Banco de dados maior para treinamento.
+✅ Fase 1 
 
-2 - Armazenamento de histórico.
+Objetivo: Refatorar, consolidar e garantir estabilidade.
 
-3 - NLP/IA de verdade no get_response
+    🔧 Organizar a estrutura de pastas (seguir padrões como MVC ou blueprint Flask)
 
-4 - Controle por usuário
+    🧪 Adicionar testes automatizados (ex: pytest) para rotas e lógica do bot
 
-6 - Suporte a mídias (áudio, imagem)
+    🔐 Melhorar o uso do .env com controle seguro de variáveis sensíveis
 
+    📋 Documentação técnica (com README detalhado e docstrings no código)
+
+    🐳 Containerizar com Docker para facilitar testes e deploy
+
+🚧 Fase 2 
+
+Objetivo: Escalar e tornar a plataforma mais robusta.
+
+    🧠 Melhorar o modelo de NLP
+
+        Trocar Naive Bayes por modelos mais robustos (como spaCy ou transformers)
+
+        Treinamento incremental ou fine-tuning
+
+    🌍 Dashboard web administrativo
+
+        Monitoramento de conversas
+
+        Visualização de métricas e treinos
+
+    🗃️ Persistência com banco de dados
+
+        SQLite, PostgreSQL ou MongoDB para histórico de conversas e usuários
+
+    📦 Criação de API RESTful completa
+
+        Para facilitar integração com CRMs, ERPs e outros sistemas
+
+🚀 Fase 3 
+
+Objetivo: Tornar a solução inteligente, escalável e pronta para produção em larga escala.
+
+    🧠 Implantar IA Generativa
+
+        Integração com modelos tipo GPT para respostas dinâmicas
+
+    🧑‍💼 Gestão multicliente
+
+        Permitir que agências ou empresas gerenciem múltiplos bots em uma só plataforma
+
+    📲 Interface Web aprimorada com React/Vue
+
+        Melhor experiência para operadores e clientes
+
+    ☁️ Deploy em cloud (AWS, Azure, GCP) com CI/CD
+
+    🔌 Pluggable Architecture
+
+        Plugins para novos canais (Instagram, Facebook, etc.)
+
+
+👨‍💻 Contato
+
+**Desenvolvedor:** [Flavio Jr]  
+**Email:** fjrsonn@gmail.com  
+**LinkedIn:** linkedin.com/in/flaviojuniorls

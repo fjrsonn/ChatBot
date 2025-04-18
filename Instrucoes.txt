@@ -1,24 +1,42 @@
-Configurando o Chatbot do Telegram
+### Configurando o Chatbot do Telegram
 
-1 Primeiro passo criar um Bot no telegeram pelo @BotFather.
-2 Segundo passo copiar o token do telegram, fornecido pelo @BotFather. 
+_1 Primeiro passo_ 
+
+>  criar um Bot no telegeram pelo @BotFather.
+
+_2 Segundo passo_ 
+
+> copiar o token do telegram, fornecido pelo @BotFather. 
+
     Exemplo do token: 7882667026:AAEzf2rYCh-2CX53p3NJAf28PX2ykbN1Nzg
         Copie esse token.
-3 Terceiro passo no terminal PowerShell autenticar token do telegram colando entre as "aspas" seguindo o comando abaixo.
+_3 Terceiro passo_ 
+
+> no terminal PowerShell autenticar token do telegram colando entre as "aspas" seguindo o comando abaixo.
+
     $env:TELEGRAM_TOKEN="7882667026:AAEzf2rYCh-2CX53p3NJAf28PX2ykbN1Nzg"
-4 Quarto passo no arquivo .env colar a chave seguindo a estrutura abaixo.
+_4 Quarto passo_ 
+
+> no arquivo .env colar a chave seguindo a estrutura abaixo.
+
     TELEGRAM_TOKEN=7882667026:AAEzf2rYCh-2CX53p3NJAf28PX2ykbN1Nzg
 
-Configurando o Chatbot do WhatsApp
+### Configurando o Chatbot do WhatsApp
 
-1 Primeiro passo Criar uma conta no Twilio.
+_1 Primeiro passo_ 
+
+> Criar uma conta no Twilio.
+
     Vá para o site do Twilio: https://www.twilio.com/.
         Crie uma conta e configure com o numerodesejado para o Bot.
-2 Segundo passo Obter o ACCOUNT SID e AUTH TOKEN.
+_2 Segundo passo_ 
+
+> Obter o ACCOUNT SID e AUTH TOKEN.
+
     Após o login, você será redirecionado para o painel do Twilio. Você verá algo assim:
         Twilio Console (Dashboard).    
             
-            ACCOUNT SID:
+           ACCOUNT SID:
               O ACCOUNT SID (identificador da conta) está visível no painel principal da sua conta. Fica logo abaixo do nome da sua conta.
                 Ele será algo como: AC37f4889def50659962c0ac8671309a2b
                     Copie esse SID, pois você precisará dele para autenticar suas requisições API.
@@ -27,7 +45,10 @@ Configurando o Chatbot do WhatsApp
                     É uma chave secreta que permite a autenticação da sua conta Twilio para enviar e receber mensagens.
                         Fica logo abaixo do ACCOUNT SID e será algo como: 1234567890abcdef1234567890abcdef
                             Copie esse token também.
-3 Terceiro passo Obter o Número do WhatsApp.
+_3 Terceiro passo_ 
+
+> Obter o Número do WhatsApp.
+
     Para usar o WhatsApp no Twilio, você precisa configurar um número de WhatsApp. Para isso, você deve seguir os passos abaixo:
         1 - No painel de controle do Twilio, vá para o menu à esquerda e clique em "Messaging".
             2 - Em seguida, clique em "Try it out" (Experimente) e depois em "Send a WhatsApp message" (Enviar uma mensagem WhatsApp).
@@ -40,9 +61,12 @@ Configurando o Chatbot do WhatsApp
                     Para testar o WhatsApp com o Twilio, você precisa enviar uma mensagem para o número do Sandbox. O Twilio fornece instruções sobre como conectar o seu número ao Sandbox.
                         Normalmente, isso envolve enviar um código para o número do Sandbox que eles fornecem, para validar o número do WhatsApp no ambiente de teste.
 
-Configurar as Credenciais no .env
+### Configurar as Credenciais no .env
 
-1 Primeiro passo Agora que você obteve as credenciais necessárias (Token do Telegram, No Twilio o SID da conta, Auth Token e número de WhatsApp), você pode configurar um arquivo .env para armazená-las de forma segura.
+_1 Primeiro passo_ 
+
+> Agora que você obteve as credenciais necessárias (Token do Telegram, No Twilio o SID da conta, Auth Token e número de WhatsApp), você pode configurar um arquivo .env para armazená-las de forma segura.
+
     Exemplo de arquivo .env:
     TELEGRAM_TOKEN=7882667026:AAEzf2rYCh-2CX53p3NJAf28PX2ykbN1Nzg
     TWILIO_ACCOUNT_SID=AC37f4889def50659962c0ac8671309a2b
@@ -60,9 +84,15 @@ Configurar as Credenciais no .env
 Iniciando tonel de conexao via http porta 5001, e configurando URL do webhook no Twilio
     
 Expor o webhook localmente com ngrok (para testes locais)
-1 Primeiro Passo se você estiver desenvolvendo localmente, use o ngrok assim: ngrok http 5001
+_1 Primeiro passo_ 
+
+> se você estiver desenvolvendo localmente, use o ngrok assim: ngrok http 5001
+
     Ele vai gerar algo como: https://abc123.ngrok.io
-2 Passo Você vai configurar o webhook do Twilio com isso no painel:
+_2 Segundo passo Você_ 
+
+> vai configurar o webhook do Twilio com isso no painel:
+
     https://abc123.ngrok.io/whatsapp
         1 - Vá para o Console do Twilio.    
             2 - No menu lateral: Messaging > Try it Out > Send a WhatsApp message (ou "Sandbox for WhatsApp").     
@@ -86,7 +116,10 @@ Connections                   ttl     opn     rt1     rt5     p50     p90
 Rodando tudo
 
 Deploy no run_all.py
-1 Passo rode no terminal    
+_1 Primeiro passo_ 
+
+> rode no terminal    
+
     python run_all.py
         Saída esperada:
     

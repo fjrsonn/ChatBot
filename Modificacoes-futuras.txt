@@ -1,6 +1,6 @@
-🛣️ Roadmap Técnico – Evolução do Chatbot
+### Roadmap Técnico – Evolução do Chatbot
 
-✅ Fase 1 
+### Fase 1 
 
 Objetivo: Refatorar, consolidar e garantir estabilidade.
 
@@ -14,7 +14,7 @@ Objetivo: Refatorar, consolidar e garantir estabilidade.
 
     🐳 Containerizar com Docker para facilitar testes e deploy
 
-🚧 Fase 2 
+### Fase 2 
 
 Objetivo: Escalar e tornar a plataforma mais robusta.
 
@@ -38,7 +38,7 @@ Objetivo: Escalar e tornar a plataforma mais robusta.
 
         Para facilitar integração com CRMs, ERPs e outros sistemas
 
-🚀 Fase 3 
+### Fase 3  
 
 Objetivo: Tornar a solução inteligente, escalável e pronta para produção em larga escala.
 
@@ -61,7 +61,7 @@ Objetivo: Tornar a solução inteligente, escalável e pronta para produção em
         Plugins para novos canais (Instagram, Facebook, etc.)
 
 
-👨‍💻 Contato
+### Contato 👨‍💻 
 
 **Desenvolvedor:** [Flavio Jr]  
 **Email:** fjrsonn@gmail.com  

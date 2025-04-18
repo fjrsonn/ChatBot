@@ -1,0 +1,14 @@
+{
+  "intents": [
+    {
+      "tag": "saudacao",
+      "patterns": ["Oi", "Olá", "E aí", "Bom dia"],
+      "responses": ["Olá!", "Oi, tudo bem?", "Seja bem-vindo!"]
+    },
+    {
+      "tag": "despedida",
+      "patterns": ["Tchau", "Até mais", "Falou"],
+      "responses": ["Tchau!", "Até logo!", "Volte sempre!"]
+    }
+  ]
+}

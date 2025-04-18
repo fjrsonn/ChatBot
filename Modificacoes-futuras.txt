@@ -1,0 +1,12 @@
+Modificacoes futuras!
+
+1 - Banco de dados maior para treinamento.
+
+2 - Armazenamento de histórico.
+
+3 - NLP/IA de verdade no get_response
+
+4 - Controle por usuário
+
+6 - Suporte a mídias (áudio, imagem)
+

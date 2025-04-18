@@ -1,0 +1,70 @@
+# Objetivo Geral do Projeto
+
+O projeto Chatbot 0.2 é uma solução desenvolvida em Python com o intuito de criar um assistente virtual inteligente que responde a perguntas e interage com usuários via web. Ele utiliza arquivos de configuração baseados em intents (intenções), e é voltado para aplicações comerciais, como atendimento ao cliente, suporte técnico automatizado e interação em plataformas digitais.
+
+# Estrutura do Projeto
+
+O projeto está organizado da seguinte forma:
+
+Diretório  | Finalidade
+app/       | Contém os arquivos da aplicação Flask (web), incluindo o ponto de entrada (main.py) e as rotas (routes.py).
+bots/      | Implementação de diferentes "personalidades" ou canais do chatbot.
+core/      | Armazena lógica central e classes utilitárias. 
+data/      | Contém o arquivo intents.json que define as intenções, padrões e respostas usadas pelo bot.
+model/     | Destinado ao treinamento e utilização do modelo de aprendizado de máquina.
+tests/     | Testes unitários e de integração.
+run_all.py | Script execução geral do sistema, sugerindo um ponto de partida unificado para inicializar servidores ou bots.
+
+Arquivos extras | .env, run_all.py, README.md, InstruçΣes.txt, Modificacoes futuras.txt, requirements.txt.
+
+# Funcionamento Geral
+
+Inicialização com Flask:
+
+    A aplicação inicia via main.py, configurando o servidor Flask.
+
+    As rotas são gerenciadas em routes.py, incluindo a rota principal /chat que recebe mensagens via POST.
+
+Entrada do Usuário:
+
+    O usuário envia uma mensagem pela interface web ou API.
+
+    A mensagem é processada por funções que comparam o texto com padrões definidos no intents.json.
+
+Processamento:
+
+    O bot identifica a intenção (intenção = tipo de pergunta) do usuário.
+
+    Em seguida, retorna uma resposta apropriada que está definida no mesmo arquivo de intenções.
+
+Retorno ao Usuário:
+
+    A resposta é enviada em formato JSON para ser exibida na interface.
+    
+# Tecnologias e Dependências
+
+Listadas em requirements.txt:
+
+    Flask: servidor web
+
+    nltk: processamento de linguagem natural
+
+    json, random: manipulação de dados e seleção de respostas
+
+# Aplicação
+
+Este chatbot pode ser utilizado de forma eficaz em diversos setores comerciais:
+
+    E-commerce: Atendimento automatizado 24/7
+
+    Serviços de TI: Suporte técnico básico
+
+    Educação: Respostas a perguntas frequentes de alunos
+
+    Saúde: Agendamento automatizado e orientação inicial
+
+Sua estrutura modular e baseada em intenções torna fácil adaptar a ferramenta para diferentes nichos de mercado, sem necessidade de reprogramar a lógica principal — basta alterar o arquivo de intenções.
+
+O Chatbot é um sistema inteligente e em evolução, com potencial comercial sólido. 
+Seu uso de NLP básico com nltk, aliado à flexibilidade do Flask, oferece uma base excelente para personalização e crescimento. 
+É ideal para empresas que desejam adotar automação de atendimento sem depender de soluções terceirizadas caras.

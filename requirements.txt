@@ -1,0 +1,6 @@
+flask
+scikit-learn
+python-telegram-bot
+waitress
+twilio
+python-dotenv

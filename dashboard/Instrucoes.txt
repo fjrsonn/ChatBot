@@ -1,0 +1,36 @@
+✅ 1. Requisitos
+
+Antes de começar, você precisa ter instalado:
+
+    Python 3.10+
+
+    Docker + Docker Desktop
+
+    (Opcional) VS Code, Git
+
+💻 . Rodando em ambiente local (sem Docker)
+
+1 Primeiro passo  
+> Instale as dependências:
+pip install -r requirements.txt
+
+2 Segundo passo 
+> Rode o app com o Python:
+python -m dashboard.app.main
+
+3 Terceiro passo
+> Acesse no navegador:
+👉 http://localhost:5000/admin
+
+🐳 4. Rodando via Docker
+Passo 1: Crie a imagem do projeto
+
+docker build -f ./dashboard/app/base.dockerfile -t chatbot-admin .
+
+Passo 2: Rode o container
+
+docker run -p 5000:5000 -e PYTHONPATH=/app chatbot-admin
+
+Passo 3: Acesse no navegador
+
+👉 http://localhost:5000/admin
